@@ -1,6 +1,7 @@
 # Buondary heat flux estimation in continuous casting molds
 Benchmak case for the boundary heat flux estimation in a continuous casting mold given pointwise temeprature measurements
 
+<a href="https://doi.org/10.5281/zenodo.5242918"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.5242918.svg" alt="DOI"></a>
 
 The repository contains scripts for generating the relevant meshes and solving the inverse problem of estimating the boundary ehat flux in a continuous casting mold. The considered domain is a simplification of a continuous casting mold.
 
