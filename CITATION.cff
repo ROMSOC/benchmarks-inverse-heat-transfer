@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Morelli."
+  given-names: "Umberto E."
+  orcid: "https://orcid.org/0000-0001-9929-5117"
+- family-names: "Stabile"
+  given-names: "Giovanni"
+  orcid: "https://orcid.org/0000-0003-3434-8446"
+- family-names: "Barral"
+  given-names: "Patricia"
+  orcid: "https://orcid.org/0000-0003-0921-4585"
+- family-names: "Rozza"
+  given-names: "Gianluigi"
+  orcid: "https://orcid.org/0000-0002-0810-8812"
+- family-names: "Quintela"
+  given-names: "Peregrina"
+  orcid: "https://orcid.org/0000-0003-2717-8936"
+title: "Benchmarks inverse heat transfer problem: Boundary heat flux estimation in continuous casting mold"
+version: 1.0.0
+doi: 
+date-released: 2021-08-24
+url: "https://github.com/ROMSOC/benchmarks-inverse-heat-transfer"
