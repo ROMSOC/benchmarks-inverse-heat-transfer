@@ -26,7 +26,7 @@ This script relyes on the C++ libraries [OpenFOAM](https://www.openfoam.com/) an
 ### POSTPROCESSING
 The output of the simulations are all saved into the `ITHACAoutputs` folder. For the post processing of the results, several python codes are available at the directory `pythonPlots`. To obtain the post processing plot, the user must run the command `python required-plots.py` where required-plots should be selected by the ones available in the folder, e.g. `python CGconvergence.py` to see the convergence of the Alifanov’s regularization and the behaviour of the error with the iterations.
 
-<hr style="border:1px" > </hr>
+<hr style="border:1px" > 
 
 ### DISCLAIMER
 
@@ -35,7 +35,7 @@ In downloading this SOFTWARE you are deemed to have read and agreed to the follo
 This SOFTWARE has been designed with an exclusive focus on civil applications. It is not to be used
 for any illegal, deceptive, misleading or unethical purpose or in any military applications. This includes ANY APPLICATION WHERE THE USE OF THE SOFTWARE MAY RESULT IN DEATH, PERSONAL INJURY OR SEVERE PHYSICAL OR ENVIRONMENTAL DAMAGE. Any redistribution of the software must retain this disclaimer. BY INSTALLING, COPYING, OR OTHERWISE USING THE SOFTWARE, YOU AGREE TO THE TERMS ABOVE. IF YOU DO NOT AGREE TO THESE TERMS, DO NOT INSTALL OR USE THE SOFTWARE
 
-<hr style="border:1px" > </hr>
+<hr style="border:1px" > 
 
 ### ACKNOWLEDGEMENTS
 
@@ -43,5 +43,5 @@ for any illegal, deceptive, misleading or unethical purpose or in any military a
 
 The ROMSOC project has received funding from the European Union’s Horizon 2020 research and innovation programme under the Marie Skłodowska-Curie Grant Agreement No. 765374. This repository reflects the views of the author(s) and does not necessarily reflect the views or policy of the European Commission. The REA cannot be held responsible for any use that may be made of the information this repository contains.
 
-<hr style="border:1px"> </hr>
+<hr style="border:1px">
 
