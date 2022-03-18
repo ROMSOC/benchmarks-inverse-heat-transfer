@@ -14,8 +14,12 @@ WORKDIR /tmp
 RUN apt-get update --yes && \
   apt-get install --yes --no-install-recommends python3-pip 
 
-ARG NB_USER="sudofoam"
+ARG NB_USER="jovyan"
 ARG NB_UID="1000"
+ENV USER ${NB_USER}
+ENV NB_UID ${NB_UID}
+ENV HOME /home/${NB_USER}
+RUN usermod -l ${NB_USER} -d ${HOME} -m sudofoam
 
 # Fix DL4006
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
@@ -108,8 +112,8 @@ ENV SHELL=/bin/bash \
 COPY . ${HOME}
 COPY source/Benchmark.ipynb /usr/lib/ITHACA-FV/tutorials/inverseHeatTransfer/IHTP01inverseLaplacian/
 USER root
-RUN chown -R ${NB_USER}:${NB_USER} ${HOME}
-RUN chown -R ${NB_USER}:${NB_USER} /usr/lib/ITHACA-FV/tutorials/inverseHeatTransfer/IHTP01inverseLaplacian/
+RUN chown -R ${NB_UID} ${HOME}
+RUN chown -R ${NB_UID} /usr/lib/ITHACA-FV/tutorials/inverseHeatTransfer/IHTP01inverseLaplacian/
 
 # Switch back to jovyan to avoid accidental container runs as root
 USER ${NB_USER}
