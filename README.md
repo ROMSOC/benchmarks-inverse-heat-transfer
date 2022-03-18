@@ -26,6 +26,19 @@ This script relyes on the C++ libraries [OpenFOAM](https://www.openfoam.com/) an
 ### POSTPROCESSING
 The output of the simulations are all saved into the `ITHACAoutputs` folder. For the post processing of the results, several python codes are available at the directory `pythonPlots`. To obtain the post processing plot, the user must run the command `python required-plots.py` where required-plots should be selected by the ones available in the folder, e.g. `python CGconvergence.py` to see the convergence of the Alifanov’s regularization and the behaviour of the error with the iterations.
 
+### RUN JUPYTER NOTEBOOKS
+The entire benchmark repository can be executed in a provided Docker container where a full installation of OpenFOAM and ITHACA-FV is available. Once you have clone or downloaded this repository, to build the container just type
+```bash
+docker build -t benchmarks-inverse-heat-transfer . 
+```
+and for running it locally:
+```bash
+docker run -u 0 -it --rm -p 8888:8888 benchmarks-inverse-heat-transfer jupyter-lab --ip=0.0.0.0 --port=8888 --allow-root
+```
+
+Alternatively, user-friendly Jupyter Notebooks could be used to run different benchmarks on the cloud. For instance, the benchmark (part of the ITHACA-FV tutorials) is available at:
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ROMSOC/benchmarks-inverse-heat-transfer/HEAD?labpath=source/Benchmark.ipynb). Please, notice that mybinder cloud computations are limited to 2GB of RAM memory and the current setting of this benchamark with the mesh included in this repository requires around 8GB (it is recommended use this notebook for pre- and post-processing purposes when running large OpenFOAM simulations).
+
 <hr style="border:1px" > 
 
 ### DISCLAIMER
