@@ -1,7 +1,3 @@
-# Copyright (C) 2015-2022 by the RBniCS authors
-#
-# This file is part of RBniCS.
-#
 # SPDX-License-Identifier: LGPL-3.0-or-later
 
 FROM ithacafv/ithacafv:manifest-amd64
@@ -105,7 +101,7 @@ ENV SHELL=/bin/bash \
 
 # Make sure the contents of our repo are in ${HOME}
 COPY . ${HOME}
-COPY Benchmark.ipynb /usr/lib/ITHACA-FV/tutorials/inverseHeatTransfer/IHTP01inverseLaplacian/
+COPY source/Benchmark.ipynb /usr/lib/ITHACA-FV/tutorials/inverseHeatTransfer/IHTP01inverseLaplacian/
 
 # Switch back to jovyan to avoid accidental container runs as root
 USER $USER
