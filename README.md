@@ -37,7 +37,7 @@ docker run -u 0 -it --rm -p 8888:8888 benchmarks-inverse-heat-transfer jupyter-l
 ```
 
 Alternatively, user-friendly Jupyter Notebooks could be used to run different benchmarks on the cloud. For instance, the benchmark (part of the ITHACA-FV tutorials) is available at:
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ROMSOC/benchmarks-inverse-heat-transfer/HEAD?labpath=source/Benchmark.ipynb). Please, notice that mybinder cloud computations are limited to 2GB of RAM memory and the current setting of this benchamark with the mesh included in this repository requires around 8GB (it is recommended use this notebook for pre- and post-processing purposes when running large OpenFOAM simulations).
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ROMSOC/benchmarks-inverse-heat-transfer/HEAD). Please, notice that mybinder cloud computations are limited to 2GB of RAM memory and the current setting of this benchamark with the mesh included in this repository requires around 8GB (it is recommended use this notebook for pre- and post-processing purposes when running large OpenFOAM simulations).
 
 <hr style="border:1px" > 
 
